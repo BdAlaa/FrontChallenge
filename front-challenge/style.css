@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+ }
+ html {
+     scroll-behavior: smooth;
+ }
+ 
+ .container {
+ width: 100%;
+ padding-top: 2%;
+ padding-left: 7%;
+ padding-right: 7%;
+ box-sizing: border-box;
+ overflow: hidden;
+ }
+ 
+ .navbar {
+     width: 100%;
+     display: flex;
+     position: fixed;
+     padding: 15px 35px;
+     left: 0;
+     right: 0;
+     top: 0;
+     z-index: 100;
+     align-items: center;
+     background-color: #FFF;
+     margin-bottom: 95px;
+ }
+ 
+ .navbar ul li {
+     display: inline-block;
+     margin: 5px 25px;
+    
+ }
+ 
+ .navbar ul li a {
+ text-decoration: none;
+ font-size: 14px;
+ font-weight: 700;
+ color: #19182580;
+ transition: 0.2s;
+ }
+ 
+ .navbar ul li a:hover {
+     color: #222831;
+ }
+ 
+ .sign {
+     display: flex;
+     align-items: center;
+     position: absolute;
+     right: 128px;
+ }
+ 
+ .sign ul li a {
+     text-align: right;
+     color: black;
+     font-size: 14px ;
+     font-weight: 700;
+ }
+ 
+ .button {
+     display: flex;
+     padding: 16px 32px;
+     align-items: flex-start;
+     gap: 8px;
+     border-radius: 100px;
+     background: var(--primary,#5D50C6);
+     cursor: pointer;
+ 
+ }
+ 
+ .button a {
+     color: var(--light,#EEE);
+     text-decoration: none;
+ } 
+
+.button1 {
+    display: flex;
+    cursor: pointer;
+    width: auto;
+    padding: 16px 32px ;
+    align-items: center;
+    border-radius: 100px;
+    border: none;
+    background-color: #FFF;
+    box-shadow: 0px 18px 29px rgba(0, 0, 0, 0.04);
+    color: var(--secondary,#F85E9F);
+    font-size: 14px ;
+    font-weight: 700;
+}
+
+
+.button1_icon {
+    margin-right: 10px;
+    border: none;
+}
+
+.main {
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+.main_img {
+position: absolute;
+right: 5%;
+top: 18%;
+}
+
+.main h1 {
+    margin-top: 43px;
+    margin-bottom: 43px;
+    font-size: 69px;
+    font-weight: 700;
+}
+.main h1 span {
+    color: #F85E9F;
+}
+.main p {
+    color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.50));
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%; 
+    margin-bottom: 43px;
+}
+
+.button_watch {
+    border-radius: 100px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: 1px solid var(--light, #EEE);
+    background: var(--white, #FFF);
+    display: flex;
+    padding: 16px 32px;
+    align-items: center;
+}
+
+.button_watch a {
+    text-decoration: none;
+    font-size:14px ;
+    font-weight: 700;
+    color: #222831;
+}
+
+.button_cont {
+    display: inline-flex;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25%;
+    margin-bottom: 10%;
+}
+
+.main h2 {
+    color: var(--secondary, #F85E9F);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 120%; 
+    letter-spacing: 4.6px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+
+}
+
+.main h3 {
+    color: var(--grey-scale-black, #191825);
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 120%; 
+}
+.two_col {
+    display: flex;
+    gap: 10px;
+}
+.col {
+    flex: none;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.card_container {
+    display: flex;
+    overflow-x: visible;/*hidden*/
+    padding: 40px;
+    white-space: nowrap;
+}
+.card {
+    border-radius: 32px;
+    border: 1px solid rgba(25, 24, 37, 0.10);
+    background: #FFF;
+    margin-right: 20px; 
+    width: 250px;
+
+    display: flex; /* Change to display: flex */
+    cursor: pointer;
+    height: 350px;
+    padding: 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    
+}
+.card:hover {
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.08);
+}
+.card_cont {
+    padding: 10px;
+    align-self: stretch;
+    text-align: center;
+}
+.card h4 {
+    color: var(--grey-scale-black, #191825);
+    margin-bottom: 32px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 120%; 
+}
+.card p {
+    color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.50));
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.round_button {
+    display: inline-block;
+    background-color:#FFF;
+    color: black;
+    border: 1px solid rgba(25, 24, 37, 0.10);
+    border-radius: 100px;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.round_button :hover {
+    background-color: #5D50C6 ;
+    color: #FFF;
+}
+.card2 {
+    border-radius: 32px;
+    background: #FFF;
+    margin-right: 80px;
+    width: 350px;
+    cursor: pointer;
+    display: flex;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.08);
+    width: 450px;
+    flex-direction: column;
+
+    
+}
+.card2_cont {
+    padding: 25px;
+    align-self: stretch;
+}
+.card-price {
+    color: var(--secondary, #F85E9F);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 120%;
+    position: relative;
+    left: 75%;
+    bottom: 60%;
+}
+.card-rank {
+    color: var(--orange, #FF5722);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 120%;
+
+}
+
+.two_part {
+    display:flex;
+    flex-direction: row-reverse;
+   
+}
+.two_part p {
+    padding-top: 36px;
+}
+.card3_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+.card3 {
+    border-radius: 32px;
+    border: 1px solid rgba(25, 24, 37, 0.10);
+    background: #FFF;
+    cursor: pointer;
+    margin-right: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 220px;
+    
+}
+.card3 h4 {
+    color: var(--orange, #FF5722);
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 120%;
+    padding-top: 15px;
+}
+.card3 p {
+    font-size: 18px;
+    color: #191825;
+    font-weight: 400;
+    line-height: 160%;
+}
+.two_part2 {
+    display:flex;
+    flex-direction: row;
+}
+
+.two_part2 p {
+    padding-top: 36px;
+}
+
+.srv_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.srv {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+ }
+ .srv:hover {
+    border: 1px solid rgba(25, 24, 37, 0.10);
+ }
+
+.srv_cont {
+    flex: 1;
+    padding-left: 35px;
+}
+.srv_cont h4 {
+    padding-top: 20px;
+}
+
+.bg {
+    position: relative;
+    background-size: cover; /* Adjust how the image covers the element */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+   
+    
+}
+.bg::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -10%;
+    left: -5%;
+    width: 150%;
+    height: 220%;
+    background-image: url("image/Vector.png");
+    background-repeat: no-repeat;
+    opacity: 0.2; /* Set the opacity for the background image */
+    z-index: -1; /* Place the pseudo-element behind other content */
+}
+.t_txt {
+    text-align: center;
+}
+.bg p {
+    color: var(--grey-scale-black-75, rgba(25, 24, 37, 0.75));
+    font-size: 23px;
+    font-weight: 700;
+}
+.bg p span {
+    color: var(--orange, #FF5722);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.centr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coll {
+    display: flex;
+    flex-direction: row;
+}
+.coll col {
+    padding: 75px;
+}
+.contact p {
+    color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.50));
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    padding-top: 36px;
+    padding-right: 20px;
+    padding-bottom: 36px;
+}
+
+.input-container {
+    margin-left: 160px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 15px;
+    width: 600px; /* Adjust width as needed */
+}
+.input-container input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+
+
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    
+    
+
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+
+    
+}
